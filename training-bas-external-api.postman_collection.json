@@ -1,0 +1,448 @@
+{
+	"info": {
+		"_postman_id": "0513fcef-33ac-4abd-a1bf-6e29cabe919f",
+		"name": "training-bas-external-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "119794"
+	},
+	"item": [
+		{
+			"name": "{{api}}/health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/health",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{api}}/transfer/data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/transfer/data",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"transfer",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{api}}/transfer/reset",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/transfer/reset",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"transfer",
+						"reset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{api}}/transfer/list-bank",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/transfer/list-bank",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"transfer",
+						"list-bank"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{api}}/transfer/:bank_id/:account_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/transfer/00-11/ACC-001",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"transfer",
+						"00-11",
+						"ACC-001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{api}}/transfer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bank_id\": \"00-11\",\r\n    \"account_id\": \"ACC-001\",\r\n    \"amount\": 25100200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/transfer",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{api}}/biller/data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/biller/data",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"biller",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{api}}/biller/reset",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/biller/reset",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"biller",
+						"reset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{api}}/biller",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/biller",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"biller"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{api}}/biller/:biller_id/:biller_account_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/biller/B0011/100200345001",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"biller",
+						"B0011",
+						"100200345001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{api}}/biller",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"biller_id\": \"B0011\",\r\n    \"biller_account_id\": \"100200345001\",\r\n    \"amount\": 4486570\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/biller",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"biller"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{api}}/va/data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/va/data",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"va",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{api}}/va/reset",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/va/reset",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"va",
+						"reset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{api}}/va",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/va",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"va"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{api}}/va/:va_code/:va_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/va/80088/8008801234",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"va",
+						"80088",
+						"8008801234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{api}}/va",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"va_code\": \"80088\",\r\n    \"va_id\": \"8008801234\",\r\n    \"amount\": 15809722\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/va",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"va"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{api}}/deposito/data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/deposito/data",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"deposito",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{api}}/deposito/reset",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/deposito/reset",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"deposito",
+						"reset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{api}}/deposito",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/deposito",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"deposito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{api}}/deposito/:account_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/deposito/1001002111",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"deposito",
+						"1001002111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{api}}/deposito",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"deposito_id\": \"great\",\r\n    \"account_id\": \"1001002111\",\r\n    \"name\": \"Tabunganku\",\r\n    \"amount\": 1000000000,\r\n    \"min_month\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/deposito",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"deposito"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api",
+			"value": "http://localhost:8081/api/v1",
+			"type": "string"
+		}
+	]
+}
